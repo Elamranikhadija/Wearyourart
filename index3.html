@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 200px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .sizes {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="cards"> 
+
+        <div class="card">
+            <img src="t-shirt1.jpeg">
+            <h3>Nature Style</h3>
+            <p class="price">99 DH</p>
+            <p class="sizes">Tailles: S / M / L / XL</p>
+            <a href="https://wa.me/212777042313" target="_blank" class="btn">Commander</a>
+        </div>
+
+        <div class="card">
+            <img src="t-shirt2.jpeg">
+            <h3>Nature Style</h3>
+            <p class="price">130 DH</p>
+            <p class="sizes">Tailles: S / M / L / XL</p>
+            <a href="https://wa.me/212777042313" target="_blank" class="btn">Commander</a>
+        </div>
+        <div class="card">
+            <img src="t-shirt3.jpeg">
+            <h3>boys</h3>
+            <p class="price">130 DH</p>
+            <p class="sizes">Tailles: S / M / L / XL</p>
+            <br>
+            <br>
+            <a href="https://wa.me/212777042313" target="_blank" class="btn">Commander</a>
+        </div>
+        <div class="card">
+            <img src="t-shirt4.jpeg">
+            <h3>boys</h3>
+            <p class="price">80 DH</p>
+            <p class="sizes">Tailles: 10 / 12 </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="https://wa.me/212777042313" target="_blank" class="btn">Commander</a>
+        </div>
+        <div class="card">
+            <img src="t-shirt5.jpeg">
+            <h3>Baby girl</h3>
+            <p class="price">80 DH</p>
+            <p class="sizes">Tailles: 1mois/ 2mois </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="https://wa.me/212777042313" target="_blank" class="btn">Commander</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

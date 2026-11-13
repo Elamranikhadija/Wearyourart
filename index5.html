@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wearyourart</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f6f7fb;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            transition: .3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: #0066ff;
+            font-weight: 700;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 13px;
+            margin-left: 5px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .2s;
+        }
+
+        .icon:hover {
+            background: #f1f3f7;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff4757;
+            color: white;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">Funny Stickers</div>
+
+        <div class="grid">
+
+
+            <!-- 50+ Cards -->
+            <script>
+
+                const products = [
+                    "imag1.jpeg",
+                    "imag2.jpeg",
+                    "image3.jpeg",
+                    "image4.jpeg",
+                    "image5.jpeg",
+                    "image6.jpeg",
+                    "image7.jpeg",
+                    "image8.jpeg",
+                    "image9.jpeg",
+                    "image10.jpeg",
+                    "image11.jpeg",
+                    "image12.jpeg",
+                    "image13.jpeg",
+                    "image14.jpeg",
+                    "image15.jpeg",
+                    "image16.jpeg",
+                    "image17.jpeg",
+                    "image18.jpeg",
+                    "image19.jpeg",
+                    "image20.jpeg",
+                    "image21.jpeg",
+                    "image22.jpeg",
+                    "image23.jpeg",
+                    "image24.jpeg",
+                    "image25.jpeg",
+                    "image26.jpeg",
+                    "image27.jpeg",
+                ];
+
+                for (let i = 1; i <= 26; i++) {
+
+                    document.write(`
+
+<div class="card">
+
+<div class="badge">-10%</div>
+
+<img src="${products[i]}" />
+
+<div class="card-title">
+Funny Sticker 
+</div>
+
+
+
+<div class="icons">
+<div class="icon">♡</div>
+<div class="icon" ><a
+href="https://wa.me/212777042313?text=Bonjour je veux le produit ${i + 1}" 
+class="icon" 
+target="_blank"
+> 
+🛒
+</a></div>
+</div>
+
+</div>
+
+`)
+
+                }
+
+            </script>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

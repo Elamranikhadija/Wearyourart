@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favorites</title>
+</head>
+
+<body>
+
+    <h1>Favorites ❤️</h1>
+
+    <div id="list"></div>
+
+    <script>
+
+        let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+        const products = [
+            "image100.jpeg", "image101.jpeg", "image102.jpeg", "image103.jpeg", "image104.jpeg",
+            "image105.jpeg", "image106.jpeg", "image107.jpeg", "image108.jpeg", "image109.jpeg",
+            "image110.jpeg", "image111.jpeg", "image112.jpeg", "image113.jpeg", "image114.jpeg", "image115.jpeg"
+        ];
+
+        let list = document.getElementById("list");
+
+        if (favorites.length === 0) {
+            list.innerHTML = "No favorites 😢";
+        }
+
+        for (let i = 0; i < favorites.length; i++) {
+
+            let id = favorites[i];
+
+            list.innerHTML += `
+<div>
+<img src="${products[id]}" width="100">
+<p>Product ${id}</p>
+</div>
+`;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
